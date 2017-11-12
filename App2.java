@@ -16,9 +16,9 @@ public class App2 {
 			Scanner sc1 = new Scanner(System.in);
 			Random rand = new Random();
 			rightDoor = rand.nextInt(3) + 1;
-			// System.out.println("The right door " + rightDoor);
-			// System.out.println("Which door would you like to pick?");
-			int Chosendoor = rand.nextInt(3) + 1;
+			System.out.println("The right door " + rightDoor);
+			System.out.println("Which door would you like to pick?");
+			int Chosendoor = sc1.nextInt();
 			chooseDoor(Chosendoor);
 		}
 		System.out.println("Win: " + counterWin + " Loose: " + counterLoose );
@@ -37,6 +37,7 @@ public class App2 {
 
 		int goat1 = rand.nextInt(2) + 1;
 		
+		
 		if(goat1==1){
 			goat = Chosendoor;
 		}
@@ -45,14 +46,13 @@ public class App2 {
 		}
 			
 			
-		// System.out.println("Would you stay in " + i + " or would you switch
-		// to " + goat);
-		Chosendoor = goat;
+		System.out.println("Would you stay in " + i + " or would you switch to " + goat);
+		Chosendoor = sc1.nextInt();
 		if (Chosendoor == rightDoor) {
-			// System.out.println("You win");
+			 System.out.println("You win");
 			counterWin++;
 		} else {
-			// System.out.println("you loose");
+			 System.out.println("you loose");
 			counterLoose++;
 		}
 

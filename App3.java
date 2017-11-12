@@ -14,8 +14,7 @@ public class App3 {
 	public static void main(String[] args) {
 		long start = System.currentTimeMillis();
 		int i;
-		for (i = 0; i <= 10000; i++) {
-
+		for (i = 0; i <= 5; i++) {
 			sc1 = new Scanner(System.in);
 			Random rand = new Random();
 			rightDoor = rand.nextInt(3) + 1;
